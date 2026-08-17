@@ -1,0 +1,316 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f1720;
+  color: #e8edf2;
+  line-height: 1.6;
+}
+
+a {
+  color: #8fd3d1;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+/* Header banner */
+
+.hero {
+  min-height: 280px;
+  background-image: linear-gradient(rgba(15, 23, 32, 0.75), rgba(15, 23, 32, 0.75)), url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.student-name {
+  color: #8fd3d1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #162433;
+  border-top: 3px solid #4aa3a2;
+  border-bottom: 3px solid #4aa3a2;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e8edf2;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+}
+
+nav a:hover {
+  color: #8fd3d1;
+}
+
+/* Main layout */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.intro,
+.highlight,
+.comparison {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+
+.cards,
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card,
+.price-card {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 350px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.card h3,
+.price-card h3 {
+  color: #8fd3d1;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4aa3a2;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.button:hover {
+  background-color: #8fd3d1;
+  color: #0f1720;
+}
+
+.price {
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Border-free comparison table */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border: none;
+}
+
+th {
+  color: #8fd3d1;
+  background-color: #0f1720;
+}
+
+tr:nth-child(even) {
+  background-color: #1c2d3d;
+}
+
+/* Contact form */
+
+.form-section {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #2f4658;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:required,
+textarea:required,
+select:required {
+  border-left: 4px solid #4aa3a2;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #4aa3a2;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4aa3a2;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #8fd3d1;
+  color: #0f1720;
+}
+
+/* Support services */
+
+.support-list {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.support-list ol {
+  padding-left: 1.5rem;
+}
+
+.support-list li {
+  margin-bottom: 1rem;
+}
+
+.support-list ul {
+  list-style-type: square;
+}
+
+.support-list h3 {
+  color: #8fd3d1;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #162433;
+  border-top: 3px solid #4aa3a2;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+footer a {
+  color: #8fd3d1;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .price-card {
+    max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+  }
+}
