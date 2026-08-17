@@ -144,6 +144,7 @@ main {
 
 .button:hover {
   background-color: #8fd3d1;
+  color: #0f1720;
 }
 
 .price {
@@ -178,6 +179,91 @@ th {
 
 tr:nth-child(even) {
   background-color: #1c2d3d;
+}
+
+/* Contact form */
+
+.form-section {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.7rem;
+  border: 1px solid #2f4658;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:required,
+textarea:required,
+select:required {
+  border-left: 4px solid #4aa3a2;
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #4aa3a2;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4aa3a2;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #8fd3d1;
+  color: #0f1720;
+}
+
+/* Support services */
+
+.support-list {
+  background-color: #162433;
+  border: 1px solid #2f4658;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.support-list ol {
+  padding-left: 1.5rem;
+}
+
+.support-list li {
+  margin-bottom: 1rem;
+}
+
+.support-list ul {
+  list-style-type: square;
+}
+
+.support-list h3 {
+  color: #8fd3d1;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -217,6 +303,10 @@ footer a:hover {
   .card,
   .price-card {
     max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
   }
 
   th,
